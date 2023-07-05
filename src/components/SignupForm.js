@@ -32,11 +32,20 @@ const SignupForm = ({ setIsLoggedIn }) => {
       return;
     }
 
+<<<<<<< HEAD
     setIsLoggedIn(true);
     toast.success("Account Created");
     const accountData = {
       ...formData,
     };
+=======
+    function submitHandler(event) {
+        event.preventDefault();
+        if(formData.password !== formData.confirmPassword) {
+            toast.error("Passwords do not match");
+            return ;
+        }
+>>>>>>> 10202f48a3aa0412fa91772cc457191c5f6cbcb3
 
     const finalData = {
       ...accountData,
