@@ -1,4 +1,4 @@
-name: React code
+name: Development Workflow
 
 on:
   push:
