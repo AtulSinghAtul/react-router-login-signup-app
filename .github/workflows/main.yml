@@ -27,3 +27,6 @@ jobs:
 
     - name: Run tests
       run: npm test
+      
+    - name: Print a message
+      run: echo "Tests have been executed successfully!"
